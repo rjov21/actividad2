@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="barra_navegacion">
+        <a href="#">
+          <img
+            class="logo"
+            src="https://cdn.nba.com/teams/uploads/sites/1610612738/2022/05/celtics_secondary.svg"
+            alt="logo"
+        /></a>
+        <ul class="ul-navbar">
+          <li class="li-navbar">Team</li>
+          <li class="li-navbar">Jugadores</li>
+          <li class="li-navbar">Partidos</li>
+          <li class="li-navbar">Jearsy</li>
+          <li class="li-navbar">Iniciar sesion</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="div-formulario">
+      <form id="formulario" action="/my-handling-form-page" method="post">
+        <ul class="ul-formulario">
+          <li class="li-formulario">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" required />
+          </li>
+          <li class="li-formulario">
+            <label for="id">ID:</label>
+            <input type="number" id="id" name="user_id" required />
+          </li>
+          <li class="li-formulario">
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" required />
+          </li>
+          <li class="li-formulario">
+            <label for="cedula">Numero de cedula:</label>
+            <input type="number" id="cedula" name="user_cedula" required />
+          </li>
+          <li class="li-formulario">
+            Sexo:
+            <input type="radio" name="hm" value="Hombre" required /> Hombre
+            <input type="radio" name="hm" value="Mujer" required /> Mujer
+          </li>
+          <div class="boton">
+            <input type="submit" value="Enviar" />
+          </div>
+        </ul>
+      </form>
+      <button onclick="cargar()">Cargar</button>
+    </div>
+    <div class="contenedor-tabla">
+      <table id="usuarios-tabla">
+        <tr>
+          <th>Nombre</th>
+          <th>ID</th>
+          <th>Correo electrónico</th>
+          <th>Cedula</th>
+          <th>Sexo</th>
+        </tr>
+        <tr></tr>
+      </table>
+    </div>
+
+    <div class="footer">
+        <p>Robinson Jesus Ordonez Vargas</p>
+        <p>rordonez@cuc.edu.co</p>
+        <div class="logos">
+            <img src="./img/facebook.png" alt="" class="facebook">
+            <img src="./img/instagram.png" alt=""  class="facebook">
+        </div>
+     </div>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>

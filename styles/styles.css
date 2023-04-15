@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    background-color: white;
+    background: url(https://cdn.celtics.com/evergreen/legacy/homepage/media/75th/75th-bg.jpg);
+    background-color: transparent;
+    background-size: cover;
+    
+}
+/* navbar*/
+.nav {
+    text-align: center;
+    width: 100%;
+
+}
+.barra_navegacion{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1520px;
+    padding: 0.5rem 1rem;
+    background-color: #008348;
+    color: white;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.ul-navbar{
+    list-style: none;
+    display: flex;
+}
+.li-navbar{
+    margin-right: 15px;
+}
+
+/* formulario */
+.div-formulario{
+    margin-top: 50px;
+    left: 37%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    
+}
+form{
+    /* background-color: aqua; */
+    border-radius: 5%;
+    width: 50%;
+}
+.li-formulario{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.ul-formulario{
+    padding: 0 20px;
+    
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+input{
+    margin-right: 10px;
+}
+.contenedor-tabla{
+    /* background-color: #008348; */
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+table, th, tr, td{
+    border: 1px solid black;
+}
+.footer{
+    text-align: center;
+    background-color: #008348;
+    color: white;
+    display: block;
+  }
+  .logos{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+  }
+  .facebook{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+@media (max-width: 480px) {
+    .card{
+        width: calc(100% - 20px);
+    }
+    .barra_navegacion{
+        display: block;
+    }
+    ul{
+        display: none;    
+    }
+  }
+  @media (max-width: 768px) and (min-width: 481px) {
+    .card{
+        width: calc(50% - 20px);
+    }
+    .barra_navegacion{
+        display: block;
+    }
+    ul{
+        display: none;    
+    }
+  }
