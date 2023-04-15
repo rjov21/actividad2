@@ -4,7 +4,7 @@ body{
     background: url(https://cdn.celtics.com/evergreen/legacy/homepage/media/75th/75th-bg.jpg);
     background-color: transparent;
     background-size: cover;
-    
+    margin-bottom: 40px;
 }
 /* navbar*/
 .nav {
@@ -77,7 +77,8 @@ table, th, tr, td{
     text-align: center;
     background-color: #008348;
     color: white;
-    display: block;
+    /* display: block; */
+    margin-top: 200px;
   }
   .logos{
     display: flex;
